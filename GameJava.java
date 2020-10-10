@@ -30,7 +30,8 @@ public class GameJava{
                 break;
         }
         System.out.println("Computer's Choice is " +computer_turn);
-
+	
+	//if else if ladder to check who won the game
         if(player_turn == "paper" && computer_turn == "stone"){
             who_won = "You have won";
         }
@@ -52,6 +53,7 @@ public class GameJava{
         else{
             who_won = "The match has been draw";
         }
+
         System.out.println(who_won);
     }
 }
