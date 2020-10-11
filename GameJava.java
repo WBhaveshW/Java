@@ -30,30 +30,31 @@ public class GameJava{
                 break;
         }
         System.out.println("Computer's Choice is " +computer_turn);
-	
+
 	//if else if ladder to check who won the game
-        if(player_turn == "paper" && computer_turn == "stone"){
+        if(player_turn.equals("paper") && computer_turn.equals("stone")){
             who_won = "You have won";
         }
-        else if(player_turn == "stone" && computer_turn == "paper"){
+        else if(player_turn.equals("stone") && computer_turn.equals("paper")){
             who_won = "You have lost ";
         }
-        else if(player_turn == "scissor" && computer_turn == "paper"){
+        else if(player_turn.equals("scissor") && computer_turn.equals("paper")){
             who_won = "You have won";
         }
-        else if(player_turn == "paper" && computer_turn  == "scissor"){
+        else if(player_turn.equals("paper") && computer_turn.equals("scissor")){
             who_won = "You have lost";
         }
-        else if(player_turn == "stone" && computer_turn == "scissor"){
+        else if(player_turn.equals("stone") && computer_turn.equals("scissor")){
             who_won = "You have won";
         }
-        else if(player_turn == "scissor" && computer_turn == "stone"){
+        else if(player_turn.equals("scissor") && computer_turn.equals( "stone")){
             who_won = "You have lost";
         }
         else{
             who_won = "The match has been draw";
         }
-
         System.out.println(who_won);
     }
 }
+// Reference
+// Error Solved Now (Reference-https://www.geeksforgeeks.org/compare-two-strings-in-java/)
